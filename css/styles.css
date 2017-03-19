@@ -87,6 +87,13 @@ footer {
     margin-top: 25px;
 }
 
+.paralaxCaption
+{
+    background-color:transparent;
+    font-size:25px;
+    color: #f7f7f7;
+}
+
 /**
  *
  * Parallax background
@@ -114,6 +121,8 @@ footer {
 .bgimg-3 {
   background-image: url("../images/img_parallax3.jpg");
   min-height: 400px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .caption {
@@ -146,3 +155,94 @@ h3 {
         background-attachment: scroll;
     }
 }
+
+/**
+ *
+ * Custom grids
+ *
+ */
+
+.custom-col-lg-2
+{
+    width: 16.66666667%;
+}
+
+.footer-distributed{
+    font: normal 16px sans-serif;
+    padding: 50px 50px 180px 180px;
+}
+
+.footer-distributed .footer-left p{
+    color:  #8f9296;
+    font-size: 14px;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links{
+    font-size:18px;
+    font-weight: bold;
+    color:  #ffffff;
+    padding: 0;
+}
+
+.footer-distributed p.footer-links a{
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+}
+
+.footer-distributed .footer-right{
+    margin-top: 6px;
+    max-width: 180px;
+}
+
+.footer-distributed .footer-right a{
+    width: 35px;
+    height: 35px;
+    background-color:  #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+}
+
+.footer-distributed h3{
+    color:  #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+}
+
+.footer-distributed h3 span{
+    color:  #5383d3;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center i{
+    background-color:  #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+    color: #ffffff;
+    vertical-align: middle;
+    margin:0;
+}
+
+/************************************/
