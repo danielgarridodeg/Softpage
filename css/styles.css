@@ -1,7 +1,7 @@
 body, html {
   height: 100%;
   margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
+  font-family: 'Arvo', serif;
   color: #000;
 }
 
@@ -61,14 +61,24 @@ header.carousel .fill {
 }
 
 .navbar{
-    background-color: #7D7DFF;
+    background-color: #0c9b48;
     border: none;
     padding: 25px 0px 25px 0px;
 } 
 
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a{
     font-size: 24px;
-    color: #000;
+    color: #FFF;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a:hover{
+    font-size: 24px;
+    color: #cecece;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a:active{
+    font-size: 24px;
+    color: #CECECE;
 }
 
 .main
@@ -76,11 +86,70 @@ header.carousel .fill {
     margin-top: 25px;
 }
 
+.panel-default {
+    border-color: #0c9b48;
+}
+
+.panel-default>.panel-heading {
+    color: #fff;
+    background-color: #0c9b48;
+    border-color: #0c9b48;
+}
+
+.btn-default {
+    color: #FFF;
+    background-color: #0c9b48;
+    border-color: #0c9b48;
+}
+
+.btn-default:hover {
+    color: #FFF;
+    background-color: #085126;
+    border-color: #085126;
+}
+
+.btn-default:focus, .btn-default:active {
+    color: #FFF;
+    background-color: #085126;
+    border-color: #085126;
+}
+
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover
+{
+    color: #FFF;
+    background-color: #085126;
+    border-color: #085126;
+}
+
+.well {
+    border: 1px solid #0c9b48;
+}
+
 .paralaxCaption
 {
     background-color:transparent;
     font-size:25px;
     color: #f7f7f7;
+}
+
+.slogan
+{
+    text-transform: uppercase;
+    color: #0c9b48;
+}
+
+.slogan span
+{
+    text-transform: lowercase;
+    color: #00471d;
+    font-size: 24px;
+}
+
+.buttoninpanel
+{
+  margin-top: 100px;
+  border-top: 1px solid #b5cebe; 
+  padding-top: 20px;
 }
 
 /**
@@ -104,7 +173,7 @@ header.carousel .fill {
 
 .bgimg-2 {
   background-image: url("../images/img_parallax2.jpg");
-  min-height: 400px;
+  min-height: 500px;
 }
 
 .bgimg-3 {
@@ -159,7 +228,7 @@ h3 {
 /* Footer Styles */
 
 footer {
-    background-color: #000;
+    background-color: #0c9b48;
     color: #000;
     margin: 0px;
     padding: 0px;
@@ -257,4 +326,10 @@ footer p.footer-links a{
     color: #ffffff;
     vertical-align: middle;
     margin:0;
+}
+
+.footer-center a
+{
+  color: #FFF;
+  text-decoration: none;
 }
