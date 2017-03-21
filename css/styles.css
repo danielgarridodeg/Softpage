@@ -36,17 +36,6 @@ header.carousel .fill {
     background-size: cover;
 }
 
-/* --- */
-
-/* Footer Styles */
-
-footer {
-    background-color: #000;
-    color: #fff;
-    margin: 0px;
-    padding: 0px;
-}
-
 /* Responsive Styles */
 
 @media(max-width:991px) {
@@ -167,61 +156,86 @@ h3 {
     width: 16.66666667%;
 }
 
-.footer-distributed{
-    font: normal 16px sans-serif;
-    padding: 50px 50px 180px 180px;
+/* Footer Styles */
+
+footer {
+    background-color: #000;
+    color: #000;
+    margin: 0px;
+    padding: 0px;
 }
 
-.footer-distributed .footer-left p{
-    color:  #8f9296;
-    font-size: 14px;
+.footer-container
+{
+  padding-top: 20px;
+  font: normal 16px sans-serif;
 }
 
-/* Footer links */
-
-.footer-distributed p.footer-links{
-    font-size:18px;
-    font-weight: bold;
-    color:  #ffffff;
-    padding: 0;
+.footer-center
+{
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.footer-distributed p.footer-links a{
-    line-height: 1.8;
-    text-decoration: none;
-    color:  inherit;
+.footer-right 
+{
+  color: #fff;
+  margin: 0px;
+  padding: 0px;
 }
 
-.footer-distributed .footer-right{
-    margin-top: 6px;
-    max-width: 180px;
+.footer-right ul 
+{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
-.footer-distributed .footer-right a{
-    width: 35px;
-    height: 35px;
+.footer-right ul li i
+{
+  margin: 0px;
+  width: 20px;
+  height: 20px;
+}
+
+.footer-right ul li
+{
+  margin: 0px;
+  text-align: center;
+  display: inline-block;
+}
+
+.footer-right ul li a{
     background-color:  #33383b;
     border-radius: 2px;
     font-size: 20px;
     color: #ffffff;
     text-align: center;
-    line-height: 35px;
-    margin-left: 3px;
+    line-height: 90px;
+    margin-left: 0px;
+    padding: 10px;
 }
 
-.footer-distributed h3{
-    color:  #ffffff;
-    font: normal 36px 'Cookie', cursive;
-    margin: 0;
+.footer-left
+{
+  color: #fff;
 }
 
-.footer-distributed h3 span{
-    color:  #5383d3;
+.footer-left h3
+{
+  color: #fff;
+  font: normal 36px 'Cookie', cursive;
 }
 
-/* Footer Center */
+footer p.footer-links a{
+    font-size:18px;
+    font-weight: bold;
+    color:  #FFF;
+    padding: 0;
+}
 
-.footer-distributed .footer-center i{
+.footer-center i{
     background-color:  #33383b;
     color: #ffffff;
     font-size: 25px;
@@ -234,15 +248,13 @@ h3 {
     vertical-align: middle;
 }
 
-.footer-distributed .footer-center i.fa-envelope{
+.footer-center i.fa-envelope{
     font-size: 17px;
     line-height: 38px;
 }
 
-.footer-distributed .footer-center p{
+.footer-center p{
     color: #ffffff;
     vertical-align: middle;
     margin:0;
 }
-
-/************************************/
