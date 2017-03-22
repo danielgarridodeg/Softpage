@@ -5,31 +5,54 @@ body, html {
   color: #000;
 }
 
-body {
-    padding-top: 50px;
-}
-
 .img-portfolio {
-    margin-bottom: 30px;
+  margin: 0px;
+  bottom: 0px;
 }
 
-.img-hover:hover {
-    opacity: 0.8;
+.img-hover {
+    display: inline-block;
+    background: black;
+    padding: 0px;
+    margin: 0px;
+}
+
+.img-hover img {
+    display: block;
+    -webkit-transition: all 0.9s linear;
+       -moz-transition: all 0.9s linear;
+        -ms-transition: all 0.9s linear;
+         -o-transition: all 0.9s linear;
+            transition: all 0.9s linear;
+}
+
+.img-hover:hover img {
+    opacity: 0.2;
+    padding: 0px;
+    margin: 0px;
+}
+
+.client-img-container
+{
+  position: relative;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* Home Page Carousel */
 
-header.carousel {
+section.carousel {
+    top: -5px;
     height: 50%;
 }
 
-header.carousel .item,
-header.carousel .item.active,
-header.carousel .carousel-inner {
+section.carousel .item,
+section.carousel .item.active,
+section.carousel .carousel-inner {
     height: 100%;
 }
 
-header.carousel .fill {
+section.carousel .fill {
     width: 100%;
     height: 100%;
     background-position: center;
@@ -46,10 +69,6 @@ header.carousel .fill {
 }
 
 @media(max-width:767px) {
-    .img-portfolio {
-        margin-bottom: 15px;
-    }
-
     .carousel .carousel {
         height: 70%;
     }
@@ -60,11 +79,59 @@ header.carousel .fill {
     text-align: center;
 }
 
-.navbar{
-    background-color: #0c9b48;
-    border: none;
-    padding: 25px 0px 25px 0px;
-} 
+.enterprise-description
+{
+  position: absolute;
+  color: #FFF;
+  text-align:center;
+  vertical-align: middle;
+  font-size: 36px;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  visibility: hidden;
+  padding: 0px;
+  margin: 0px;
+}
+
+.enterprise-description p{
+  padding: 25px;
+}
+
+.client-img-container:hover .enterprise-description {
+  visibility:visible;
+}
+
+
+.navbar {
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  transition: all .35s;
+  background-color:transparent;
+  border: none;
+  padding: 25px 0px 25px 0px;
+  /* Add additional styles here for the UNCOLLAPSED state */
+}
+.navbar.affix {
+  padding: 10px;
+  background-color: #0c9b48;
+  /* Add additional styles here for the COLLAPSED state */
+}
+.navbar-inverse.affix .navbar-brand, .navbar-inverse.affix .navbar-nav>li>a{
+    font-size: 24px;
+    color: #FFF;
+}
+
+.navbar-inverse.affix .navbar-brand, .navbar-inverse.affix .navbar-nav>li>a:hover{
+    font-size: 24px;
+    color: #000;
+}
+
+.navbar-inverse.affix .navbar-brand, .navbar-inverse.affix .navbar-nav>li>a:active{
+    font-size: 24px;
+    color: #000;
+}
 
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a{
     font-size: 24px;
@@ -73,12 +140,12 @@ header.carousel .fill {
 
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a:hover{
     font-size: 24px;
-    color: #cecece;
+    color: #FFF;
 }
 
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a:active{
     font-size: 24px;
-    color: #CECECE;
+    color: #FFF;
 }
 
 .main
@@ -121,15 +188,11 @@ header.carousel .fill {
     border-color: #085126;
 }
 
-.well {
-    border: 1px solid #0c9b48;
-}
-
 .paralaxCaption
 {
     background-color:transparent;
     font-size:25px;
-    color: #f7f7f7;
+    color: #000;
 }
 
 .slogan
@@ -157,9 +220,9 @@ header.carousel .fill {
  * Parallax background
  *
  */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
   position: relative;
-  opacity: 0.65;
+  opacity: 0.9;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -179,32 +242,39 @@ header.carousel .fill {
 .bgimg-3 {
   background-image: url("../images/img_parallax3.jpg");
   min-height: 400px;
-  margin-bottom: 50px;
   margin-top: 50px;
+}
+
+.bgimg-4 {
+  background-image: url("../images/img_parallax1.jpg");
+  min-height: 250px;
+  margin-top: 0px;
 }
 
 .caption {
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 45%;
   width: 100%;
   text-align: center;
   color: #000;
 }
 
 .caption span.border {
-  background-color: #111;
+  background-color: #000;
   color: #fff;
   padding: 18px;
   font-size: 25px;
   letter-spacing: 10px;
+  font-size:25px;
+  opacity: 1;
 }
 
 h3 {
   letter-spacing: 5px;
   text-transform: uppercase;
   font: 20px "Lato", sans-serif;
-  color: #111;
+  color: #000;
 }
 
 /* Turn off parallax scrolling for tablets and phones */
@@ -225,10 +295,14 @@ h3 {
     width: 16.66666667%;
 }
 
+.call-to-action
+{
+  margin: 10px;
+}
 /* Footer Styles */
 
 footer {
-    background-color: #0c9b48;
+    background-color: #000;
     color: #000;
     margin: 0px;
     padding: 0px;
@@ -236,20 +310,21 @@ footer {
 
 .footer-container
 {
+  margin-top: -5px;
   padding-top: 20px;
   font: normal 16px sans-serif;
 }
 
 .footer-center
 {
-  color: #fff;
+  color: #45df44;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
 .footer-right 
 {
-  color: #fff;
+  color: #45df44;
   margin: 0px;
   padding: 0px;
 }
@@ -288,19 +363,19 @@ footer {
 
 .footer-left
 {
-  color: #fff;
+  color: #0c9b48;
 }
 
 .footer-left h3
 {
-  color: #fff;
+  color: #0c9b48;
   font: normal 36px 'Cookie', cursive;
 }
 
 footer p.footer-links a{
     font-size:18px;
     font-weight: bold;
-    color:  #FFF;
+    color:  #0c9b48;
     padding: 0;
 }
 
@@ -323,13 +398,13 @@ footer p.footer-links a{
 }
 
 .footer-center p{
-    color: #ffffff;
+    color: #0c9b48;
     vertical-align: middle;
     margin:0;
 }
 
 .footer-center a
 {
-  color: #FFF;
+  color: #0c9b48;
   text-decoration: none;
 }
