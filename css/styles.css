@@ -2,7 +2,13 @@ body, html {
   height: 100%;
   margin: 0;
   font-family: 'Arvo', serif;
+  font-size: 18px;
   color: #000;
+}
+
+.page-header
+{
+    border-bottom: 2px solid #eee;
 }
 
 .img-portfolio {
@@ -130,7 +136,7 @@ section.carousel .fill {
 
 .navbar-inverse.affix .navbar-brand, .navbar-inverse.affix .navbar-nav>li>a:active{
     font-size: 24px;
-    color: #000;
+    color: #fff;
 }
 
 .navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a{
@@ -148,7 +154,17 @@ section.carousel .fill {
     color: #FFF;
 }
 
+.navbar-inverse.affix .navbar-brand, .navbar-inverse.affix .active
+{
+    color: #000 !important; 
+}
 .main
+{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.main-index
 {
     margin-top: 25px;
 }
@@ -220,7 +236,7 @@ section.carousel .fill {
  * Parallax background
  *
  */
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
   position: relative;
   opacity: 0.9;
   background-attachment: fixed;
@@ -251,6 +267,11 @@ section.carousel .fill {
   margin-top: 0px;
 }
 
+.bgimg-5 {
+  background-image: url("../images/img_parallax2.jpg");
+  min-height: 250px;
+}
+
 .caption {
   position: absolute;
   left: 0;
@@ -263,10 +284,9 @@ section.carousel .fill {
 .caption span.border {
   background-color: #000;
   color: #fff;
-  padding: 18px;
-  font-size: 25px;
+  padding: 25px;
+  font-size: 45px;
   letter-spacing: 10px;
-  font-size:25px;
   opacity: 1;
 }
 
